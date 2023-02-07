@@ -1,0 +1,68 @@
+.products {
+    /* margin: 20px; */
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 60rem;
+    animation: tshirt-appear 1s ease-out forwards;
+  
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .products__single {
+    height: 150px;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .products__single > span {
+   margin-top: 5px;
+  }
+  
+  .product__image {
+     width: 6rem;
+    height: 6rem; 
+    margin-bottom: 3px;
+    margin-bottom: 1px;
+    /* background-color: #271c6c; */
+    background: linear-gradient(190deg, rgb(15, 2, 86) 0%, rgb(38, 9, 155) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* border-radius: 50%; */
+  }
+  .product__image >img {
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+  }
+
+  @keyframes tshirt-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

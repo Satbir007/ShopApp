@@ -1,0 +1,27 @@
+.pagination {
+    padding: 10px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination > span {
+    padding: 15px 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+  
+  .pagination__selected {
+    color: white;
+    background: linear-gradient(190deg, rgb(15, 2, 86) 0%, rgb(38, 9, 155) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .pagination__disable {
+    opacity: 0;
+  }
+  
+  
+  
