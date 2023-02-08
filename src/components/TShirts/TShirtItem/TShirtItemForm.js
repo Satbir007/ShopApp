@@ -22,7 +22,7 @@ const TShirtItemForm = (props) => {
       return;
     }
 
-    props.onAddToCart(enteredAmountNumber);
+    props.onAddToCart(props.id, props.title, props.price, enteredAmountNumber);
   };
 
   return (
