@@ -6,7 +6,7 @@ import TShirt from "./TShirts/TShirt";
 import "../css/main.css";
 import CartProvider from '../store/CartProvider';
 
-const ShopAuthContent = () => {
+const ShopAuthContent = (props) => {
     const [cartIsShown, setCartIsShown] = useState(false);
 
   const showCartHandler = () => {
@@ -19,7 +19,7 @@ const ShopAuthContent = () => {
   return (
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
-      <Header onShowCart={showCartHandler} />
+      <Header onShowCart={showCartHandler} onAuthentication={props.onAuthentication}/>
       <main>
         <TShirt />
       </main>

@@ -18,6 +18,23 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 10;
   }
+
+  .header > button{
+    font: inherit;
+    cursor: pointer;
+    background-color: #1901b6;
+    border: 1px solid #1901b6;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  .header > button:hover,
+  .header > button:active {
+    background-color: #1f144e;
+    border-color: #1f144e;
+  }
   
   .main-image {
     width: 100%;

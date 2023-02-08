@@ -1,7 +1,10 @@
-import ShopAuth from "./components/ShopAuthContent";
+import React from 'react'
+import ShopAuth from './components/ShopAuth'
 
-function App() {
-  return <ShopAuth />;
+const App = () => {
+  return (
+    <ShopAuth/>
+  )
 }
 
-export default App;
+export default App

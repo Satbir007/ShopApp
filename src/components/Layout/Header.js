@@ -11,6 +11,7 @@ const Header = (props) => {
       <header className={classes.header}>
         <h1>TShirt Shop</h1>
         <HeaderCartButton onClick={props.onShowCart} />
+        <button  onClick={(e) => props.onAuthentication(e)}>Sign Out</button>
       </header>
       <div className={classes['main-image']}>
         <img src={TShirt} alt='A Shop full of TShirts' />
