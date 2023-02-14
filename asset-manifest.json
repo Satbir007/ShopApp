@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ShopApp/static/css/main.86e7c613.css",
-    "main.js": "/ShopApp/static/js/main.b2b00469.js",
+    "main.css": "/ShopApp/static/css/main.0c392d17.css",
+    "main.js": "/ShopApp/static/js/main.1b251008.js",
     "static/js/787.8f115d99.chunk.js": "/ShopApp/static/js/787.8f115d99.chunk.js",
     "static/media/TShirt.jpg": "/ShopApp/static/media/TShirt.6519b19808677c00a77e.jpg",
     "static/media/tshirt.png": "/ShopApp/static/media/tshirt.b6aae1fc5df96d947b71.png",
     "index.html": "/ShopApp/index.html",
-    "main.86e7c613.css.map": "/ShopApp/static/css/main.86e7c613.css.map",
-    "main.b2b00469.js.map": "/ShopApp/static/js/main.b2b00469.js.map",
+    "main.0c392d17.css.map": "/ShopApp/static/css/main.0c392d17.css.map",
+    "main.1b251008.js.map": "/ShopApp/static/js/main.1b251008.js.map",
     "787.8f115d99.chunk.js.map": "/ShopApp/static/js/787.8f115d99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86e7c613.css",
-    "static/js/main.b2b00469.js"
+    "static/css/main.0c392d17.css",
+    "static/js/main.1b251008.js"
   ]
 }
