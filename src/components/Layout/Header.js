@@ -1,9 +1,8 @@
-import { Fragment } from 'react';
-
-import HeaderCartButton from './HeaderCartButton';
-// import TShirt from '../../img/Tshirt.jpg';
-import TShirt from '../../img/TShirt.jpg';
-import classes from './Header.module.css';
+import { Fragment } from "react";
+import HeaderCartButton from "./HeaderCartButton";
+import TShirt from "../../img/TShirt.jpg";
+import classes from "./Header.module.css";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = (props) => {
   return (
@@ -11,10 +10,16 @@ const Header = (props) => {
       <header className={classes.header}>
         <h1>TShirt Shop</h1>
         <HeaderCartButton onClick={props.onShowCart} />
-        <button  onClick={(e) => props.onAuthentication(e)}>Sign Out</button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={(e) => props.onAuthentication(e)}
+        >
+          Sign Out
+        </motion.button>
       </header>
-      <div className={classes['main-image']}>
-        <img src={TShirt} alt='A Shop full of TShirts' />
+      <div className={classes["main-image"]}>
+        <img src={TShirt} />
       </div>
     </Fragment>
   );

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 // This component will do the Google authentication.
 
 function ShopAuth() {
-
   const [user, setUser] = useState({});
 
   function handleCallbackResponse(response) {
@@ -39,22 +38,24 @@ function ShopAuth() {
   return (
     <Fragment>
       {Object.keys(user).length === 0 && (
-        <motion.h1
-          initial={{ y: -200 }}
-          animate={{ y: 0 }}
-          transition={{ type: "spring", duration: 0.5 }}
-          whileHover={{ scale: 1.1 }}
-        >
-          Sign in to get Started !
-        </motion.h1>
+        <div className="signIn">
+          <motion.h1
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            transition={{ type: "spring", duration: 0.5 }}
+            whileHover={{ scale: 1.1 }}
+          >
+            Sign in to get Started !
+          </motion.h1>
+          <div id="signInDiv"></div>
+        </div>
       )}
-      <div id="signInDiv"></div>
+
       {Object.keys(user).length !== 0 && (
         <ShopAuthContent onAuthentication={handleSignOut} />
       )}
     </Fragment>
   );
 }
-
 
 export default ShopAuth;

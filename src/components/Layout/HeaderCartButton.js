@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
 import CartIcon from "../Cart/CartIcon";
 import CartContext from "../../store/cart-context";
 import classes from "./HeaderCartButton.module.css";
@@ -33,13 +33,18 @@ const HeaderCartButton = (props) => {
     };
   }, [items]);
   return (
-    <button className={btnClasses} onClick={props.onClick}>
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
+      className={btnClasses}
+      onClick={props.onClick}
+    >
       <span className={classes.icon}>
         <CartIcon />
       </span>
       <span>Your Cart</span>
       <span className={classes.badge}>{numberOfCartItems}</span>
-    </button>
+    </motion.button>
   );
 };
 

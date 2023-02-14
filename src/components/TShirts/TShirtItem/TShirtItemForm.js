@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./TShirtItemForm.module.css";
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
+import { motion } from "framer-motion";
 import Input from "../../UI/Input";
 
 const TShirtItemForm = (props) => {
@@ -39,7 +40,9 @@ const TShirtItemForm = (props) => {
           defaultValue: "1",
         }}
       />
-      <button>+ Add</button>
+      <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        + Add
+      </motion.button>
       {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
     </form>
   );
